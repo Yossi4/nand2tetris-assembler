@@ -1,4 +1,4 @@
-k# Nand2Tetris — Hack Assembler (Java)
+# Nand2Tetris — Hack Assembler (Java)
 
 Java implementation of the Hack Assembler from the [Nand2Tetris](https://www.nand2tetris.org/) course.  
 Translates `.asm` Hack assembly code into `.hack` binary machine code.
