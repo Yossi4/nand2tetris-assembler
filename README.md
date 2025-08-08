@@ -1,4 +1,4 @@
-# Nand2Tetris — Hack Assembler (Java)
+k# Nand2Tetris — Hack Assembler (Java)
 
 Java implementation of the Hack Assembler from the [Nand2Tetris](https://www.nand2tetris.org/) course.  
 Translates `.asm` Hack assembly code into `.hack` binary machine code.
@@ -18,4 +18,44 @@ make
 
 # Run the assembler
 ./Assembler path/to/YourFile.asm
+```
+Example:
+```bash
+make
+./Assembler Rect.asm
+# Output: Rect.hack
+```
+
+### Option 2 — Manual Java compilation
+```bash
+# Compile all Java source files
+javac *.java
+
+# Run the assembler
+java Main path/to/YourFile.asm
+```
+Example:
+```bash
+javac *.java
+java Main Rect.asm
+# Output: Rect.hack
+```
+
+## Project structure
+```
+.
+├── AUTHORS
+├── Main.java
+├── Parser.java
+├── Code.java
+├── SymbolTable.java
+├── Makefile
+├── lang.txt
+└── Assembler       # executable wrapper for running the program
+```
+
+## Notes
+- This project passed all official Nand2Tetris assembler tests.
+- Works with any Java 8+ installation.
+- No external dependencies required.
 
